@@ -1,0 +1,110 @@
+
+
+main{
+    margin:0  auto;
+width: 90%;
+
+}
+main h2{
+    color: var(--color-gris-oscuro);
+    text-align: center;
+    font-size: var(--font-tamaño-titulares);
+    margin: 20px auto
+}
+main article{
+    margin-bottom: 10px;
+    position: relative;
+
+}
+main article img{
+margin: auto;
+width: 100%;
+}
+main article .box-detail{
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-end;
+}
+main article div i{
+    font-size: 15px;
+    border: solid 1px var(--color-verde);
+    color:var(--color-verde);
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    left:80%;
+    bottom: 65px;
+}
+main article div p{
+    
+    font-size: var(--font-tamaño-precios);
+   width: 30%;
+}
+main article div .dto{
+    width: 70%;
+    text-align: left;
+    position: relative;
+    color: var(--color-verde);
+    font-size: var(--font-tamaño-dtos-desc);
+}
+main article div h3{
+    opacity: 0.4;
+    width: 100%;
+    margin: 15px 0 0 0
+} 
+
+
+/* tablet */
+@media (min-width: 361px) {
+
+
+    main h2{text-align: left;}
+
+    main section{
+        display: flex;
+       flex-wrap:wrap;
+       justify-content: space-between;
+   }
+    main article{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+        width:45%;
+        position: relative;
+    }
+   
+  
+    main article div p,main article div p.dto{
+      font-size: 15px;
+      display: flex;
+      justify-content: space-around;
+    }
+main article div i{
+   font-size: 14px;
+   left: 75%;
+}
+}
+
+@media (min-width: 562px) {
+    main article div i{
+        left:80%;
+        font-size: 15px;
+    }
+}
+
+
+/* desktop */
+@media (min-width: 768px) {
+
+    main section{
+        display: flex;
+       flex-wrap:nowrap;
+       gap: 25px;
+       
+       }
+       main article div i{
+        left: 75%;
+     }
+    }

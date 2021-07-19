@@ -1,0 +1,134 @@
+
+header{
+    background-color:var(--color-amarillo);
+    padding-bottom: 10px;
+}
+.sub-header{
+    width: auto;
+    height: auto;
+    display: flex;
+align-items: center;
+
+
+}
+
+header .logo{
+    width: 50%;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+ header .sub-header .search {
+     width: 50%;
+     display: flex;
+     height: 35px;
+    position: relative;
+justify-content: center;
+
+  
+ }
+
+header .sub-header .search .input{
+    border-radius: 5px;
+    border: inherit; 
+    width: 130px;
+} 
+
+header .sub-header .search .icon-search{
+    position: relative;
+    border: inherit;
+    right: 10px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+header p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header nav{
+    display: none;
+    margin-left: 10px;
+}
+header .burger-menu{
+    background-color: var(--color-celeste);
+    width: 30px;
+    height: 26px;
+    text-align: center;
+    color: var(--color-gris-claro);
+    margin: 20px auto 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+header .burger-menu i{
+font-size: 20px;
+text-align: center;
+}
+
+/* tablet */
+@media (min-width: 361px) {
+    header .header2{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    
+    header .header2 .sub-header{
+        width: 65%;   
+    }
+    header .logo{
+        width: 170px;
+        height: 90px;
+    }
+    header .sub-header .search {
+        width:230px;
+        display: flex;
+        justify-content: space-evenly;
+       
+    }
+    header .sub-header .search .input{
+       border-radius:initial;
+       border: solid 0.5px var(--color-gris-oscuro);
+       height: 20px;
+       width:50% ;
+    } 
+    
+    header .sub-header .search .icon-search{
+        border-radius:initial;
+        border: solid 0.5px var(--color-gris-oscuro) ;
+      height: 20px;
+    }
+        header nav {
+            display:flex;
+            gap:50px
+            }
+        header nav ul{
+            width: 100%;
+            display:flex;
+            justify-content: space-evenly;
+        }
+        .burger-menu{
+            display: none;
+        }
+    }
+
+    /* desktop */
+@media (min-width: 768px) {
+    header .header2{
+        display: flex ;
+        justify-content: space-evenly;
+    }
+    header .logo{
+    width: 240px;
+    }
+    header nav{
+        gap:150px
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

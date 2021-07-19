@@ -1,0 +1,14 @@
+{
+  "name": "mercado-liebre-5---formularios",
+  "version": "1.0.0",
+  "description": "Login and Register",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juliana Lezcano",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
