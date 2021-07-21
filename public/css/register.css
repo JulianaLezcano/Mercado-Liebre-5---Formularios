@@ -1,4 +1,6 @@
-
+html main{
+    height: 210%
+}
 .form{
     background: linear-gradient(60deg,var(--color-amarillo), var(--color-gris-claro)) ;
     border: solid 2px var(--color-gris-oscuro);
@@ -77,10 +79,16 @@ input::placeholder{
 .form{
     width:60% ;
 }
+input{
+    width: 200px;
+}
 }
 
 @media (min-width: 768px) {
     .form{
-        width:50% ;
+        width:40% ;
+    }
+    input{
+        width: 250px;
     }
 }
