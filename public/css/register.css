@@ -1,0 +1,86 @@
+
+.form{
+    background: linear-gradient(60deg,var(--color-amarillo), var(--color-gris-claro)) ;
+    border: solid 2px var(--color-gris-oscuro);
+    box-shadow: 5px 5px 5px 2px var(--color-gris-oscuro);
+    padding-left:15px;
+    width: 90%;
+    margin: 15px auto 15px auto;
+   
+
+}
+.form div{
+    margin:5px 0 15px 0
+}
+.datos{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: center;
+    gap:2px;
+    margin-top: 2px
+}
+input{
+    display: flex;
+    border-radius: 5px;
+    width: 180px;
+    height: 25px;
+}
+input:hover{
+    background: linear-gradient(10deg,white,var(--color-celeste));
+}
+input::placeholder{
+    color:var(--color-azul)
+}
+.msj-error{
+    font-size: 10px;
+    color: red;
+    text-align: left;
+}
+ #interes, #comprar-vender{
+    width: 15px;
+  
+}
+.comprar-vender{
+    width: auto;
+     display: flex;
+     flex-wrap: nowrap;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+    }
+
+.interes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+.div-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+   width: 50px;
+   border-radius: 10%;
+   background: linear-gradient(10deg,white,var(--color-celeste));
+
+}
+.button:active{
+   background: linear-gradient(10deg,var(--color-celeste),white);
+
+}
+
+
+/* tablet */
+@media (min-width: 461px) {
+.form{
+    width:60% ;
+}
+}
+
+@media (min-width: 768px) {
+    .form{
+        width:50% ;
+    }
+}
